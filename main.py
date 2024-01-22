@@ -13,7 +13,7 @@ from langchain_community.llms import HuggingFaceHub
 import configparser
 
 config = configparser.ConfigParser()
-config.read('./.gitignore/config.ini')
+config.read('config.ini')
 
 # Access HuggingFaceHub API information
 huggingfacehub_api_token = config['HuggingFaceHub']['api_token']

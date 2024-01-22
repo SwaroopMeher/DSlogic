@@ -9,7 +9,7 @@ from qdrant_client.http import models
 import configparser
 
 config = configparser.ConfigParser()
-config.read('./.gitignore/config.ini')
+config.read('config.ini')
 
 # Access Qdrant API information
 api_key_qdrant = config['Qdrant']['api_key']
