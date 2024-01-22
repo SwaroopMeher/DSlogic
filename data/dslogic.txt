@@ -1,0 +1,70 @@
+## Start DSlogic:
+
+1. Data Modality: Table, Image, Text, Audio - C
+
+### Exploratory Data Analysis:
+
+1. Check the size of your data
+    1. If Small:
+        1. Less than 50 samples
+            1. If training a model
+                1. Gather more - E
+            2. Else go to step 4
+    2. If Large:
+        1. Consider using distributed systems like Hadoop for storage and Spark for processing
+        2. Skip step 4 - C
+2. Remove duplicates
+3. Handle Missing Values **- I**
+    1. Impute
+    2. Remove
+4. If making decisions concerning a population based on a sample
+    1. Inferential statistics **- I**
+5. Descriptive analytics: Summarizing and understanding data
+    1. df.describe()
+    2. Univariate Analysis: ****Distribution of each variable. outliers detection/anomaly detection.
+        1. If Continuous variable: 
+            1. Mean, Median, Mode, Min, Max, Range, Quartile, IQR, Variance, Standard Deviation, Skewness, Histogram, Box Plot
+            2. Outliers?
+                1. Keep
+                2. Remove
+        2. If Categorical variable: Bar plot
+    3. Bivariate Analysis - 
+        1. If Continuous variable:
+            1. correlation matrices, scatter plots
+        2. If Categorical variable:
+            1. Correlation between Categorical Variables: Cramér's V, Chi-Square test
+        3. Categorical variable vs Continuous variable: Point-biserial correlation
+    4. Multivariate Analysis **- I**
+6. Group the data on categorical variables to find patterns.
+    1. Summarize
+
+### Data Preprocessing:
+
+1. Change the object type of each column as per the business need or the problem if needed.
+2. Change the format of the values if needed.
+3. If numeric
+    1. Handle special values like inf, NaN
+    2. Handle inconsistencies
+4. If categorical
+    1. if High cardinality:
+        1. Group the variable on a suitable condition, Ex: if the zipcode is a 5-digit number and there are 3000 unique zip codes, group the zipcode feature using the first 3 digits to reduce cardinality.
+        2. or target encoding/frequency encoding/Top N Encoding
+            
+            **Note**: Trees can handle high cardinality
+            
+    2. Label encoding if target variable/ordinal feature variable
+    3. One-hot encoding if a feature variable
+5. Handle Data Imbalance **- I**
+    1. Oversampling if less number of records
+    2. Undersampling if enough number of records
+    3. Synthetic data generation
+    4. Weighted classes
+    
+    **Note**: Ensemble methods can handle data imbalance
+    
+6. Split the data
+7. Scale the data
+8. Dimensionality reduction **- I**
+    1. PCA
+    2. Feature selection
+9. Create new features if necessary
