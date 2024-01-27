@@ -29,7 +29,7 @@ qdrant_client = QdrantClient(
 data_dir = 'data'
 
 def load_docs(directory):
-  loader = DirectoryLoader(directory)
+  loader = DirectoryLoader(directory, show_progress=True, use_multithreading=True)
   documents = loader.load()
   return documents
 
@@ -57,6 +57,7 @@ qdrant = Qdrant.from_documents(
     prefer_grpc=True,
     api_key=api_key_qdrant,
     collection_name=collection_name,
+    force_recreate=True
 )
 
 def get_similiar_docs(query,k=3,score=False):

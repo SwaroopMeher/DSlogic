@@ -1,0 +1,113 @@
+Post #1:
+
+The author: If I had to start learning ML all over again, this is what I would do differently:
+
+I’d learn PyTorch over TensorFlow
+
+PyTorch is designed to play nicely in the Python ecosystem and feels more natural to Python developers. E.g. it integrates with NumPy and Scikit-Learn. Also, the dynamic computational graph has an easier learning curve. So stick to PyTorch for getting started. You can learn TF later.
+
+I'd learn the theory AFTER learning the tools
+
+This contradicts almost every course I've ever come across. But I learn by DOING. Abstract concepts don't make sense to me unless I can apply them to real-world problems. So if I had to do it all over again, I'd start by learning how to use a the most basic model possible (decision trees) to predict labels in the iris dataset. Then I'd practice on other datasets until I got comfortable, and then advance to logistic regression. Then I'd learn the math and theory behind logistic regression. Rinse & repeat.
+
+I’d focus on deployment much sooner
+
+Success in ML is all about thinking through how your models can add value, and then working backwards. Traditional teaching leads to ML practitioners building models without a clear goal, which fails 95% of the time. By getting to deployment sooner, you train your mind to think closer to the end goal.
+
+I’d only use remote dev environments
+
+Having a remote dev environment is SO much easier since you don't have to worry about hardware or local package environments. Examples: Google Colab, Amazon Sagemaker, PyCharm Remote Development.
+
+I’d start using MLflow immediately
+
+Building a model that will live in a Jupyter Notebook forever is very different from building a model that needs to be deployed and maintained in production. By using a framework like MLflow early on, you'll instill good habits from the start."
+
+Post #2:
+
+Advice on keeping projects simple
+
+"I can't recall a project that failed because the solution wasn't sophisticated enough... 
+
+But I can think of at least a dozen that failed because the solution was overly complex.
+
+As technical professionals, we're so eager to flex our hard-earned skills that we often forget the number one rule of engineering:
+
+The best solutions are often elegantly simple.
+
+In other words, just because we're equipped with advanced skills doesn't mean they need to be leveraged in every project.
+
+In fact, the best way to align on the right solution is to AVOID thinking about the solution until you've:
+
+Identified the root cause of the problem at hand
+Defined KPIs whose improvement signals success
+Obtained buy-in from those closest to the problem
+
+In most cases, the right solution will be obvious and, more often than not, simple."
+
+Post #3:
+
+7 data science interview tips that are actually effective:
+
+"1️⃣ When designing a model architecture or solving a problem, rather than just giving an answer, present two reasonable options, weigh their pros and cons, and then select one.
+
+👉 Your reasoning for the decision is more important than the decision itself.
+
+2️⃣ When working through a case study, interweave data-driven decision making with common-sense reasoning.
+
+👉 Not every decision needs to be answered with data, and attempting to do so slows you down in both interviews and the real-world.
+
+3️⃣ Don't be afraid to break the fourth wall: Interact directly with the interviewer, not just the code.
+
+👉 You’d be surprised how effective it is to ask “Am I on the right track?” Even if the interviewer doesn't respond, their reaction typically gives you valuable feedback.
+
+4️⃣ If asked about your weaknesses, answer with 100% sincerity. Talk about a real area for improvement and how you are actively improving it.
+
+👉 This is more authentic than the cliché “hidden strengths” most people attempt in place of admitting their weaknesses. And seeing someone self-aware enough to admit their areas of opportunity is a strong sign of maturity.
+
+5️⃣ When asked about a successful past project, discuss how it failed at first.
+
+👉 Overcoming failure is more impressive than having success on the first try. 
+
+6️⃣ When asked about a project where you had to challenge assumptions, reflect on a time when you used your intuition to challenge the data itself.
+
+👉 Invalid data assumptions are one of the most common pitfalls of real-world data science. Demonstrate you’re aware of this, and will validate data when needed.
+
+7️⃣ If asked about a tool or programming language you're not experienced with, don't simply state your lack of expertise and leave it at that. Instead, relate it to something you know and express how you'd learn it if you needed to.
+
+👉 This makes any skills or knowledge gaps appear transient, as you’ve demonstrated that you understand the core concept and have a plan to learn it quickly if needed."
+
+Post #4:
+
+Here's how to gauge if your org is truly ready for ML:
+
+"🏗️ 𝗗𝗮𝘁𝗮 𝗜𝗻𝗳𝗿𝗮𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲
+You've moved your data consumption off of MySQL/Postgres and onto an analytics database like Snowflake or BigQuery, powered by a well-organized ETL/ELT process.
+
+⚖️ 𝗔/𝗕 𝗧𝗲𝘀𝘁𝗶𝗻𝗴 𝗖𝘂𝗹𝘁𝘂𝗿𝗲
+You have a "culture" of A/B testing, and are comfortable classifying projects as failures without batting an eye. This is essential for ML roll-outs, as it ensures they are evaluated impartially and critically.
+
+🔑 𝗩𝗮𝗹𝗶𝗱 𝗨𝘀𝗲 𝗖𝗮𝘀𝗲𝘀
+You plan to start with ML in already-established products, to clearly identify if challenges arise from the ML application or the product itself.
+
+📈 𝗣𝗮𝘁𝗶𝗲𝗻𝗰𝗲 𝗳𝗼𝗿 𝗥𝗢𝗜
+You are comfortable waiting 6-12 months before realizing substantial ROI from ML. Onboarding new staff, setting up ML infrastructure, and refining models takes time.
+
+Rushing into ML is a common mistake that often leads to disillusionment, a scenario worse than never attempting it at all. Yet, when executed thoughtfully, the benefits are game-changing."
+
+Post #5:
+"An intriguing paradox amongst ML professionals is that we all believe ourselves to be immune to data leakage.
+
+And yet, invariably, it ensnares us all.
+
+Avoiding data leakage isn't as simple as doing a proper train/test split. It's usually much more insidious. For instance, these are the 3 most common ways I see it happen in practice:
+
+🥉 𝗜𝗺𝗽𝗹𝗶𝗰𝗶𝘁 𝗱𝗮𝘁𝗮 𝗱𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗹𝗲𝗮𝗸𝗲𝗱 𝗮𝗰𝗿𝗼𝘀𝘀 𝘁𝗿𝗮𝗶𝗻/𝘁𝗲𝘀𝘁 𝘀𝗽𝗹𝗶𝘁
+Occurs when data is implicitly duplicated in the training and test sets. For instance, consider a Netflix recommendation system, where two people living in the same household have different profiles, but often watch movies together. If the two user profiles are split across training and test sets, it leads to leakage through implicit data duplication. This is because each profile doesn't just reflect one user's preferences, but a mix of both. As a result, their viewing habits appear similar in both datasets, artificially boosting the model's performance on the test set.
+
+🥈 𝗖𝗼𝗺𝗽𝗿𝗼𝗺𝗶𝘀𝗲𝗱 𝗲𝗻𝗰𝗼𝗱𝗶𝗻𝗴𝘀
+This leakage can happen when your model uses seemingly innocuous identifiers, like flight numbers or patient IDs, which inadvertently reveal information about the target variable. For example, in a model predicting flight delays using flight numbers as input, these identifiers may appear random but can covertly encode past delay patterns based on routes that were historically prone to delays. Relying on these hidden correlations, the model may erroneously "predict" delays based on past conditions rather than learning real-time factors causing them, even if those past conditions are no longer relevant trends.
+
+🥇 𝗜𝗻𝗰𝗼𝗿𝗽𝗼𝗿𝗮𝘁𝗶𝗻𝗴 𝗳𝘂𝘁𝘂𝗿𝗲 𝗱𝗮𝘁𝗮 𝗶𝗻𝘁𝗼 𝘁𝗲𝗺𝗽𝗼𝗿𝗮𝗹 𝗮𝗴𝗴𝗿𝗲𝗴𝗮𝘁𝗶𝗼𝗻𝘀
+Common in time series forecasting, this type of leakage occurs when using temporal aggregation encodings and incorporating future data into the aggregation.  For example, in a user engagement prediction model using the feature "change-in-weekly-engagement-rate," a subtle time zone alignment issue during data preprocessing may inadvertently incorporate user interactions from the upcoming week, introducing future data and causing data leakage.
+
+Remember, we're never too senior to fall victim to data leakage. If your results are too good to be true, they probably are."

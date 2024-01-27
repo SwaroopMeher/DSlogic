@@ -27,8 +27,6 @@ collection_name = "dslogic"
 def find_match(input):
     input_em = model.encode(input).tolist()
     results = qdrant_client.search(collection_name=collection_name, query_vector=input_em, limit=2, with_payload=True)
-    print("\n\n------------------------\n\n")
-    print("\n".join(point.payload['page_content'] for point in results))
     return "\n".join(point.payload['page_content'] for point in results)
 
 # def query_refiner(conversation, query):
