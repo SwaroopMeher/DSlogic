@@ -1,6 +1,8 @@
 # DSlogic: Data Science Assistant
 
 DSlogic is your open-source, LLM-powered assistant, guiding you through every step of your DS journey. Imagine having a wise mentor whispering best practices in your ear, from data cleaning to model selection and probably more. 
+
+Try it: https://huggingface.co/spaces/inmind/DSlogic
 #
 ### Architecture
 ![LLM app](https://github.com/SwaroopMeher/DSlogic/assets/115743490/cde46f5e-6387-4ffa-9b4d-3d83297ff4a5)
